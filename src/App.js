@@ -7,7 +7,6 @@ function App() {
   function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
   }
-  
 
   function formatName(user) {
     return user.firstName + ' ' + user.lastName;
