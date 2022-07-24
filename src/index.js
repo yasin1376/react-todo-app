@@ -6,20 +6,21 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-function Form() {
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log('You clicked submit.');
+class LoggingButton extends React.Component {
+  // This syntax ensures `this` is bound within handleClick.
+  handleClick = () => {
+    console.log('this is:', this);
+  };
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        Click me
+      </button>
+    );
   }
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <button type="submit">Submit</button>
-    </form>
-  );
 }
 
-root.render(<Form />);
+root.render(<LoggingButton />);
 // root.render(
 //   <React.StrictMode>
 //     <App />
