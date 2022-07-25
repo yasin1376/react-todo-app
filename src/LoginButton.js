@@ -1,6 +1,6 @@
 import React from 'react'
 
-class LoggingButton extends React.Component {
+class LoginButton extends React.Component {
     // This syntax ensures `this` is bound within handleClick.
     handleClick = () => {
       console.log('this is:', this);
@@ -14,4 +14,4 @@ class LoggingButton extends React.Component {
     }
   }
 
-  export default LoggingButton;
+  export default LoginButton;
