@@ -1,26 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './LoginButton.js';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-class LoggingButton extends React.Component {
-  // This syntax ensures `this` is bound within handleClick.
-  handleClick = () => {
-    console.log('this is:', this);
-  };
-  render() {
-    return (
-      <button onClick={this.handleClick}>
-        Click me
-      </button>
-    );
-  }
-}
-
-root.render(<LoggingButton />);
+root.render(<LoginButton />);
 // root.render(
 //   <React.StrictMode>
 //     <App />
