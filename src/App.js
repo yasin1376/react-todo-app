@@ -1,17 +1,12 @@
 import React from 'react'
 import './App.css';
 import './index.css';
+import TasksPage from './components/TasksPage';
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          Todo list App
-        </div>
-      </header>
-    </div>
+      <TasksPage />
   );
 }
 
