@@ -11,9 +11,10 @@ class TasksPage extends Component {
      } 
 
     render() { 
+        const listItem = this.state.tasks.map(e => <li>{e.task}</li>);
         return (
             <div>
-                Tasks Page
+                <ul>{listItem}</ul>
             </div>
         );
     }
