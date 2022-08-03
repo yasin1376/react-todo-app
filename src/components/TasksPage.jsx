@@ -13,9 +13,9 @@ class TasksPage extends Component {
     render() { 
         const listItem = this.state.tasks.map(e => <li>{e.task}</li>);
         return (
-            <div>
+            <React.Fragment>
                 <ul>{listItem}</ul>
-            </div>
+            </React.Fragment>
         );
     }
 }
